@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #6ff9e9; /* Matches the blue background */
+  margin: 0;
+}
+
+.calculator {
+  background: #e0ebfa; /* Light blue background for the calculator */
+  padding: 20px;
+  border-radius: 20px; /* Rounded edges for a smoother look */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  width: 300px; /* Updated width */
+}
+
+#display {
+  width: 100%;
+  height: 60px; /* Increased height */
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 24px;
+  text-align: right;
+  border: none;
+  border-radius: 8px;
+  background: #d6e9fc; /* Light display area */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft inset effect */
+}
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 buttons per row */
+  gap: 12px; /* Increased gap for better spacing */
+}
+
+
+button {
+  height: 60px; /* Increased button height */
+  font-size: 18px;
+  background: #b3ef82; /* Blue buttons */
+  border: none;
+  border-radius: 8px; /* Smooth button edges */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Button shadow */
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+button:hover {
+  background: #35da87; /* Slightly darker blue when hovered */
+  transform: scale(1.05); /* Subtle hover scaling effect */
+}
+
+#enter {
+  grid-column: span 2; /* Enter spans two columns */
+  background: #75ee6c; /* Darker blue for Enter */
+  color: rgb(0, 0, 0);
+}
+
+#enter:hover {
+  background: #57a466;
+}
+
+#del,
+#clear {
+  background: #75ee6c;/* Red buttons for delete and clear */
+}
+
+#del:hover,
+#clear:hover {
+  background: #57a466;
+}
